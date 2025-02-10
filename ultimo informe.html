@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Último Informe</title>
+    <link rel="stylesheet" href="styles">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background:linear-gradient(30deg, rgb(251, 172, 154),rgb(240, 63, 74), rgb(232, 134, 134), rgb(227, 50, 50), rgb(249, 121, 121));
+            color: rgb(0, 0, 0);
+            padding: 5rem;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            background: rgb(255, 189, 189);
+            margin: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(227, 88, 88, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background:linear-gradient(30deg, rgb(251, 172, 154),rgb(240, 63, 74), rgb(232, 134, 134), rgb(227, 50, 50), rgb(249, 121, 121));
+            color: rgb(0, 0, 0);
+        }
+        .imagen-completa img {
+    width: 100%;
+    height:0%;
+    display: block;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+
+    <section class="imagen-completa">
+        <img src="img10" alt="Imagen de encabezado">
+    </section>
+</header>
+    <main>
+        <section class="politica" >
+            <h2><a href="politica">politica</a></h2>
+            <p>Noticias recientes sobre política...</p>
+        </section>
+        <section class="tecnologia">
+            <h2><a href="tecnologia">Tecnología</a></h2>
+            <p>Últimos avances tecnológicos...</p>
+        </section>
+        <section class="salud">
+            <h2><a href="salud">Salud</a></h2>
+            <p>Información y novedades en salud...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Último Informe - Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.addEventListener("click", function() {
+                    alert("Has seleccionado la sección: " + this.id);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
